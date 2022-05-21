@@ -1,6 +1,6 @@
 class EmailController{
-    emailLogin(){
-        let emailf = new Email($('#email').val());
+    emailCheck(){
+        let emailf = new Email($('.email').val());
         let emailuser = new EmailView();
         emailuser.showEmail(emailf.verifyLogin())
     }
@@ -8,8 +8,7 @@ class EmailController{
 
 let showing = new EmailController();
 
-$('#enter').click(function(event){
-    console.log('teste')
+$('#action').click(function(event){
     event.preventDefault();
     showing.emailCheck();
 })

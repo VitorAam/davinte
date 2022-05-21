@@ -3,7 +3,6 @@ class Email{
         this.email = email;
     }
     verifyLogin(){
-        console.log(this.email)
         let user = this.email.substring(0, this.email.indexOf('@'));
         let domain = this.email.substring(this.email.indexOf('@')+1, this.email.length);
         if ((user.length >=1) &&
