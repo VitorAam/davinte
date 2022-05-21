@@ -44,8 +44,19 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
+    flex-direction: column;
     height: 100%;
     width: 100%;
     border: 1px red solid;
     
+}
+
+#container_forgot_password{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#button {
+    margin: auto;
 }
