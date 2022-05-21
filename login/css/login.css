@@ -30,14 +30,12 @@ main{
     display: block;
     align-items: center;
     align-content: center;
-    height: 100vh;
 }
 
 footer{
     display: flex;
     justify-content: space-between;
     font-size: 20px;
-    
 }
 
 .formulario1{

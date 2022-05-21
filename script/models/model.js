@@ -1,12 +1,12 @@
 class Email{
-    constructor(login){
-        this.login = login;
+    constructor(email){
+        this.email = email;
     }
-
-    verifyLogin(email){
-        let user = email.value.substring(0, email.value.indexOf('@'));
-        let domain = email.value.substring(email.value.indexOf('@')+1, email.value.length);
-        if ((usuario.length >=1) &&
+    verifyLogin(){
+        console.log(this.email)
+        let user = this.email.substring(0, this.email.indexOf('@'));
+        let domain = this.email.substring(this.email.indexOf('@')+1, this.email.length);
+        if ((user.length >=1) &&
             (domain.length >= 3) &&
             (user.search("@") ==-1) &&
             (domain.search("@") ==-1) &&
