@@ -1,11 +1,33 @@
 * {
     margin: 0px;
     padding: 0px;
-
+    box-sizing: border-box;
+    
 }
 
-body {
-    background: rgba(15, 6, 54, 0.726)
+html{ height:100%;
+}
+
+body{ 
+    min-height:100%; 
+    padding:0; 
+    margin:0; 
+    position:relative; 
+    background-image: url(https://www.integratto.com.br/wp-content/uploads/elementor/thumbs/digital-cyberspace-with-particles-and-digital-data-network-connections-high-speed-connection-data-analysis-future-background-concept-scaled-p2oa3zjwraj9w9uask54z9157k65b0kez92ibki1l4.jpg);   
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 50px;
+}
+
+
+
+
+header{ 
+    height:50px; 
+    background:rgb(255, 255, 255); 
 }
 
 .geral {
@@ -48,25 +70,11 @@ body {
 }
 
 
-
-html{ height:100%; }
-body{ min-height:100%; padding:0; margin:0; position:relative; }
-header{ height:50px; background:rgb(255, 255, 255); }
-
-
-body {
-  position: relative;
-}
-
-body::after {
-  content: '';
-  display: block;
-  height: 50px;
-}
-
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 50px;
+  background-color: rgb(10, 11, 85);
+  color: rgb(0, 0, 0);
 }
