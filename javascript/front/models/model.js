@@ -20,3 +20,31 @@ class Email{
             }
     }
 }
+
+class Cep{
+    constructor(cep){
+        this.cep = cep;
+    }
+    pesquisaCep(){
+        try{
+            const url = `https://viacep.com.br/ws/${this.cep}/json/`;
+            console.log(url)
+            if(this.cep.length == 8){
+                $.ajax({url: url, success: (result) => {   
+                    if (result.erro == "true"){
+                       throw new Error ( 
+                            "cpfinvalido"
+                        )
+                    }else{
+                        console.log(result)
+                        return result
+                    }
+                }});
+            } else {
+                return false
+            }
+        }catch(erro){
+            console.log(erro)
+        }
+    }
+}
