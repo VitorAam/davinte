@@ -26,22 +26,22 @@ class Cep{
         this.cep = cep;
     }
     pesquisaCep(){
+        return `https://viacep.com.br/ws/${this.cep}/json/`
         try{
             const url = `https://viacep.com.br/ws/${this.cep}/json/`;
-            console.log(url)
             if(this.cep.length == 8){
-                $.ajax({url: url, success: (result) => {   
+                $.ajax({url: url,
+                    success: (result) => {
+                    console.log(result) 
                     if (result.erro == "true"){
                        throw new Error ( 
                             "cpfinvalido"
                         )
                     }else{
-                        console.log(result)
-                        return result
+                        console.log('teste')
+                        const resultado = result
                     }
                 }});
-            } else {
-                return false
             }
         }catch(erro){
             console.log(erro)

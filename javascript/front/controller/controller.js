@@ -16,15 +16,27 @@ $('#action').click(function(event){
 class CepController{
     cepCheck(){
         let cep = new Cep($('#cep').val())
-        console.log(cep)
-        console.log(cep.pesquisaCep())
+        const url = cep.pesquisaCep()
         let checked = new CepView()
-        checked.showCep(cep.pesquisaCep())
+        try{
+            if(cep.cep.length == 8){
+                $.ajax({url: url,
+                    success: (result) => {
+                    checked.showCep(result)
+                    }
+                });
+            } else {
+                checked.showErro()
+            }
+        }catch(erro){
+            console.log(erro)
+        }
     }
 }
 
 let showingCepRegister = new CepController();
 
 $('#cep').blur(function(){
+    $('#cep-error').html('')
     showingCepRegister.cepCheck()
 })

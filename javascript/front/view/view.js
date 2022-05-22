@@ -9,10 +9,7 @@ class CepView{
         if (resultado.erro == "true"){
             $('#cep-error').html('CEP inválido')
             $('#cep-error').css({'color': '#ff0000', 'font-size':'13px'})
-        } else if(result == false) {
-            $('#cep-error').html('CEP inválido')
-            $('#cep-error').css({'color': '#ff0000', 'font-size':'13px'})
-        } else {
+        }else {
             //preenche os campos de endereço com o retono da api.
             $("#rua-cliente").val(resultado.logradouro);
             $("#cidade-cliente").val(resultado.localidade);
@@ -20,5 +17,9 @@ class CepView{
             $("#uf-cliente").val(resultado.uf);
             $("#compl-casa-cliente").val(resultado.complemento);
         }
+    }
+    showErro(){
+        $('#cep-error').html('CEP inválido')
+        $('#cep-error').css({'color': '#ff0000', 'font-size':'13px'})
     }
 }
