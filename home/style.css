@@ -12,8 +12,11 @@ body{
     min-height:100%; 
     padding:0; 
     margin:0; 
-    position:relative; 
-    background-image: url(https://www.integratto.com.br/wp-content/uploads/elementor/thumbs/digital-cyberspace-with-particles-and-digital-data-network-connections-high-speed-connection-data-analysis-future-background-concept-scaled-p2oa3zjwraj9w9uask54z9157k65b0kez92ibki1l4.jpg);   
+    position:relative top; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(../imgs/back.svg);   
 }
 
 body::after {
@@ -22,13 +25,34 @@ body::after {
   height: 50px;
 }
 
-
-
-
-header{ 
-    height:50px; 
+/* -------------------------beggin nav bar --------------------------------*/
+#navbarcustom{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content; 
     background:rgb(255, 255, 255); 
 }
+
+#links{
+    width: 50vw;
+    justify-content: right;
+
+}
+
+.nav-item{
+    padding: 2rem;
+}
+.navbar-toggler{
+    margin: 1rem;
+}
+
+/* -------------------------end nav bar --------------------------------*/
+
+
+
+
 
 .geral {
     display: flex;
@@ -69,12 +93,37 @@ header{
 
 }
 
+/* -------------------------beggin  footer --------------------------------*/
 
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 50px;
-  background-color: rgb(10, 11, 85);
-  color: rgb(0, 0, 0);
+  height: 13vh;
+  background:rgb(255, 255, 255);
+  color: rgb(0, 0, 0,0.6);
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
+  
 }
+footer:hover {
+  color: black;
+}
+
+.col-sm{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+
+#maps{
+    margin: 1rem;
+}
+
+/* -------------------------end footer --------------------------------*/
