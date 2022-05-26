@@ -1,94 +1,136 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Davinte - Cadastre-se</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/register.css">
-
-    </head>
-    
-    <body>
-        <header>
-            
-            <div><h1>logo</h1></div>
-            <nav>
-                <span><a href="#">Home</a></span>
-                <span><a href="#">Detalhes</a></span>
-                <span><a href="#">Cadastre-se</a></span>
-                <span><a href="#">Login</a></span>
-                <span><a href="#">Contato</a></span>
-            </nav>
-        </header>       
+    <!DOCTYPE html>
+    <html lang="en">
         
-        <main>
-
-            <form class="form">
-                <div class="dados-cliente">
-                    <h3>Dados Pessoais:</h3><br><br>
-                    <label>Nome</label><br>
-                    <input type="text" id="nome-cliente" required><br><br>
-                    <label>Sobrome</label><br>
-                    <input type="text" id="sobrenome-cliente" required><br><br>
-                    <label>RG</label><br>
-                    <input type="number" id="rg-cliente" required><br><br>
-                    <label>E-mail</label><br>
-                    <input type="text" id="email-cliente" onblur="validarEmail()" required><span id="error-email"></span>
-                    <br><br><br><br>
-                </div>
-
-                <div class="endereco-cliente">
-                    <h3>Endereço:</h3><br><br>
-                    <label>CEP</label><br>
-                    <input type="number" id="cep" required><span id="cep-error"></span>
-                    <br><br>
-                    <label>Endereço</label><br>
-                    <input type="text" id="rua-cliente" required><br><br>
-                    <label>Número</label><br>
-                    <input type="text" id="numero-casa-cliente" required><br><br>
-                    <label>Complemento</label><br>
-                    <input type="text" id="compl-casa-cliente"><br><br>
-                    <label>Cidade</label><br>
-                    <input type="text" id="cidade-cliente" required><br><br>
-                    <label>Bairro</label><br>
-                    <input type="text" id="bairro-cliente" required><br><br>
-                    <label>Estado</label><br>
-                    <input type="text" id="uf-cliente" required><br><br><br><br>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="../../home/style.css">
+            <!-- <link rel="stylesheet" href="../css/register.css"> -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+            <link rel="shortcut icon" href="../../imgs/logotipo.svg">
+    <title>Davint: Cadatro</title>
     
-                </div>
-                
-                <div class="senha-cliente">
-                    <h3>Cadastre uma senha:</h3><br><br>
-                    <label>Senha</label><br>
-                    <input type="password" id="senha"><br><br>
-                    <label>Confirme sua senha</label><br>
-                    <input type="password" id="conf-senha" onblur="validarSenha()"><br>
-                    <p id="senha-invalida"></p><br><br>
-                    
-                    <button type="submit" id="btn-submit" onclick="enviarForm()">Cadastrar</button>
-                </div>
-               
+</head>
 
-            </form>
-
-            
-
-        </main>
-
-        <footer>
-            <div>Resilia 2022</div>
-            <div>Grupo 5</div>
-        </footer>
+<body>
+    <header>
+        <nav id="navbarcustom" class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../../imgs/egg.png">
+              <img src="../../imgs/logotipogimp.gif" width="80rem" height="80rem" alt="logo">
+            </a>
+                <a id="titulo" class="navbar-brand" href="../../imgs/giphy-23.gif">Davint</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="links" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../../home/index.html">Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../pag-detalhes/html/index.html">Detalhes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../login/html/login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./register.html">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../pag-contatos/index.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <main>
+                    <form class="form">
+                        <div class="mb-3 mt-3" class="dados-cliente">
+                            <h3>Dados Pessoais:</h3><br><br>
+                            <label>Nome</label><br>
+                            <input type="text" id="nome-cliente" class="form-control" placeholder="Nome" required><br><br>
+                            <label>Sobrome</label><br>
+                            <input type="text" id="sobrenome-cliente" class="form-control" placeholder="Sobrenome" required><br><br>
+                            <label>RG</label><br>
+                            <input type="number" id="rg-cliente" class="form-control" placeholder="Escreva seu RG" required><br><br>
+                            <label>E-mail</label><br>
+                            <input type="text" id="email-cliente" class="form-control" placeholder="Entrada e-mail" onblur="validarEmail()" required><span id="error-email"></span>
+                            <br><br><br><br>
+                        </div>
         
-
+                        <div class="mb-3 mt-3" class="endereco-cliente">
+                            <h3>Endereço:</h3><br><br>
+                            <label>CEP</label><br>
+                            <input type="number" id="cep" class="form-control" required><span id="cep-error"></span>
+                            <br><br>
+                            <label>Endereço</label><br>
+                            <input type="text" id="rua-cliente" class="form-control" placeholder="Rua, Avenida, Beco..." required><br><br>
+                            <label>Nº</label><br>
+                            <input type="text" id="numero-casa-cliente" class="form-control" placeholder="Número do endereço" required><br><br>
+                            <label>Complemento</label><br>
+                            <input type="text" id="compl-casa-cliente" class="form-control" placeholder="Bloco, ap..."><br><br>
+                            <label>Cidade</label><br>
+                            <input type="text" id="cidade-cliente" class="form-control" placeholder="Entrada cidade" required><br><br>
+                            <label>Bairro</label><br>
+                            <input type="text" id="bairro-cliente" class="form-control" placeholder="Entrada bairro" required><br><br>
+                            <label>Estado</label><br>
+                            <input type="text" id="uf-cliente" class="form-control" placeholder="Entrada Estado" required><br><br><br><br>
+            
+                        </div>
+                        
+                        <div class="senha-cliente">
+                            <h3>Cadastre uma senha:</h3><br><br>
+                            <label>Senha</label><br>
+                            <input type="password" id="senha"><br><br>
+                            <label>Confirme sua senha</label><br>
+                            <input type="password" id="conf-senha" onblur="validarSenha()"><br>
+                            <p id="senha-invalida"></p><br><br>
+                            
+                            <button type="submit" id="btn-submit" onclick="enviarForm()">Cadastrar</button>
+                        </div>
+                       
+        
+                    </form>
+    </main>
+    
+    <footer class="rodape_final">
+        
+        <div class="row">
+          <div class="col-sm">
+            contato da empresa
+            email@mail.com<br>
+            entre em contato com nosso SAC 08002 - 4777
+          </div>
+          <div class="col-sm">
+            <div class="coluna">
+                aqui vem nosso endereço---
+                Rio de Janeiro <br>
+                Praia de Copacabana, <br> posto 9
+              </div>
+              <div class="coluna">
+                  <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13091.104263857871!2d-43.19486542674519!3d-22.966174945315466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd54579a5956b%3A0xa102deeaffcb3e3!2sPraia%20de%20Copacabana!5e0!3m2!1spt-BR!2sbr!4v1653334380033!5m2!1spt-BR!2sbr" width="90%" height="60vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
+          <div class="col-sm">
+            &copy; Todos os direitos reservados
+          </div>
+        </div>
+   
+ 
+</footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         <script src="../../javascript/front/models/model.js"></script>
         <script src="../../javascript/front/view/view.js"></script>
         <script src="../../javascript/front/controller/controller.js"></script>
+        
     </body>
-</html>
+    
+    
+    </html>
