@@ -20,3 +20,12 @@ class Email{
             }
     }
 }
+
+class Cep{
+    constructor(cep){
+        this.cep = cep;
+    }
+    pesquisaCep(){
+        return `https://viacep.com.br/ws/${this.cep}/json/`
+    }
+}
