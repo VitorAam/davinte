@@ -24,7 +24,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url(../imgs/back.svg);   
+    background-image: url(../../imgs/back.svg);   
 }
 
 body::after {
