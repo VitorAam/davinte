@@ -41,13 +41,20 @@ body::after {
     font-size: 19px;
     margin: 0 0 0 0;
     background-color: rgba(28, 26, 129, 0.733);
-    font-family:  Arial, Helvetica, sans-serif;
+    font-family:  'Arial', Helvetica, sans-serif;
     text-align: justify;
     align-items: center;
     padding: 10px;
     border-radius: 50px;
 }
 
+h1 {
+    font-family: 'Arial', Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255);
+    border-radius: 30px;
+    flex-direction: center;
+    margin: 10px 20px 10px 20px;
+}
 /* -------------------------beggin nav bar --------------------------------*/
 #navbarcustom{ 
     position:fixed;
