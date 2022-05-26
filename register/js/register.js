@@ -55,11 +55,4 @@ function validarSenha(){
     }}
 }
 
-function enviarForm(){
-    
-    console.log("form enviado!");
-    
-
-}
-
 
