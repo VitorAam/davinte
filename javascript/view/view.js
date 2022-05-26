@@ -1,6 +1,17 @@
 class EmailView{
-    showEmail(email){
-        alert(email)
+    showEmail(emailValido){
+        if(emailValido == true){
+
+            document.getElementById("email-cliente").style.borderColor = '#4ECA64';
+            document.getElementById("error-email").innerHTML = ''
+    
+        } else {
+    
+            document.getElementById("error-email").innerHTML = ' E-mail invalido.'
+            document.getElementById("error-email").style.fontSize = '13px'
+            document.getElementById("error-email").style.color = '#ff0000'
+            document.getElementById("email-cliente").style.borderColor = '#ff0000'
+        }
     }
 }
 

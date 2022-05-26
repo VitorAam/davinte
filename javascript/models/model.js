@@ -1,26 +1,35 @@
-function validarEmail(){
-
-    const expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
-    const email = document.getElementById("email-cliente").value;
-    
-    //função nativa js '.test' retorna valor booleano para strings que atendam ou não a um critério.
-    const emailValido = expReg.test(email);
-
-    console.log(email)
-
-   if(emailValido == true){
-
-        document.getElementById("email-cliente").style.borderColor = '#4ECA64';
-        document.getElementById("error-email").innerHTML = ''
-
-    } else {
-
-        document.getElementById("error-email").innerHTML = ' E-mail invalido.'
-        document.getElementById("error-email").style.fontSize = '13px'
-        document.getElementById("error-email").style.color = '#ff0000'
-        document.getElementById("email-cliente").style.borderColor = '#ff0000'
+class Email{
+    constructor(email){
+        this.email = email;
+    }
+    verifyLogin(){
+        let user = this.email.substring(0, this.email.indexOf('@'));
+        let domain = this.email.substring(this.email.indexOf('@')+1, this.email.length);
+        if ((user.length >=1) &&
+            (domain.length >= 3) &&
+            (user.search("@") ==-1) &&
+            (domain.search("@") ==-1) &&
+            (user.search(" ") ==-1) &&
+            (domain.search(" ") ==-1) &&
+            (domain.search(".") != -1) &&
+            (domain.indexOf(".") >=1) &&
+            (domain.lastIndexOf(".") < domain.length -1)){
+                return true 
+            } else {
+                return false 
+            }
     }
 }
+
+class Cep{
+    constructor(cep){
+        this.cep = cep;
+    }
+    pesquisaCep(){
+        return `https://viacep.com.br/ws/${this.cep}/json/`
+    }
+}
+
 
 function validarSenha(){
 
@@ -54,5 +63,3 @@ function validarSenha(){
         document.getElementById("senha-invalida").style.color = '#ff0000'
     }}
 }
-
-
