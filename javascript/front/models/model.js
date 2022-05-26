@@ -27,24 +27,5 @@ class Cep{
     }
     pesquisaCep(){
         return `https://viacep.com.br/ws/${this.cep}/json/`
-        try{
-            const url = `https://viacep.com.br/ws/${this.cep}/json/`;
-            if(this.cep.length == 8){
-                $.ajax({url: url,
-                    success: (result) => {
-                    console.log(result) 
-                    if (result.erro == "true"){
-                       throw new Error ( 
-                            "cpfinvalido"
-                        )
-                    }else{
-                        console.log('teste')
-                        const resultado = result
-                    }
-                }});
-            }
-        }catch(erro){
-            console.log(erro)
-        }
     }
 }
