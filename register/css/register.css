@@ -9,19 +9,19 @@ body{
     height: 100vh;
 }
 
-header{
+/*header{
     display: block;
     width: 100%;
     border: 1px red solid;
     text-align: center;
     padding: 5px;
-}
+}*/
 
 nav{
     display: flex;
     width: 100%;
     justify-content: space-around;
-    border: 1px red solid;
+    /*border: 1px red solid;*/
     padding: 5px;
 }
 
@@ -29,7 +29,7 @@ main{
     display: block;
     align-items: center;
     align-content: center;
-    height: 100vh;
+    height: 30%;
 }
 
 footer{
@@ -38,17 +38,6 @@ footer{
     font-size: 20px;        
 }
 
-
-.form{
-
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    height: 100%;
-    width: 100%;
-    border: 1px red solid;        
-}
 
 input {
     border-style:solid;
@@ -66,3 +55,25 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance:textfield;
 }
+
+
+#btn-submit{
+    padding: 5px;
+}
+
+.form{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    height: 30%;
+    width: 100%;
+    /*border: 1px red solid;        */
+}
+
+.painel-branco{
+    background-color: rgba(255, 255, 255, 0.582);
+    padding: 20px;
+}
+
