@@ -2,30 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../home/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="shortcut icon" href="../../imgs/logotipo.svg">
-    <title>Davint: Contatos </title>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../home/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="shortcut icon" href="../../imgs/logotipo.svg">
+  <title>Davint: Contatos </title>
+
 </head>
 
 <body>
   <header>
-    <nav id="navbarcustomheader" class="navbar fixed-top navbar-expand-sm navbar-light bg-light ">
+    <nav id="navbarcustom" class="navbar navbar-default fixed-top navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../../imgs/egg.png">
-            <img src="../../imgs/logotipogimp.gif" width="60rem" height="60rem" alt="logo">
-        </a>
-        <a id="titulo" class="navbar-brand" href="../../imgs/giphy-23.gif">Davint</a>
-    
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- tirei expand (class ), adicionei metade div até final de id='titulo',  -->
+        <div class="metade">
+          <a class="navbar-brand" href="../../imgs/giphy-23.gif">
+            <img src="../../imgs/logotipogimp.gif" width="30" height="30" alt="Logo" class="d-inline-block align-top">
+            Davint
+          </a>
+        </div>
+        <div class="metade">
+          <ul id="header-links" class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="../../home/html/index.html">Home</a>
             </li>
@@ -39,7 +39,7 @@
               <a class="nav-link" href="../../register/html/register.html">Cadastro</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../../pag-contatos/html/contacts.html">Contato</a>
+              <a class="nav-link" href="../../pag-contatos/html/contacts.html">Contato</a>
             </li>
           </ul>
         </div>
@@ -47,11 +47,10 @@
     </nav>
   </header>
 
-<div class="maincontent">
+  <div class="maincontent">
     <main id="mainContact">
       <div id="karina">
         <a href="https://github.com/Kahrinita"><img class="gifsContato" src="../../imgs/karina.gif"></a>
-        
       </div>
       <div id="Renato">
         <a href="https://github.com/rnegrelly"><img class="gifsContato" src="../../imgs/Renato.gif"></a>
@@ -65,33 +64,40 @@
     </main>
   </div>
 
-    <nav id="navbarcustomfooter" class="navbar fixed-bottom navbar-expand-sm navbar-light bg-light">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-sm-0 mb-sm-0">
-            <li class="nav-item">
-              <a class="navbar-text">Contato: <br> email@gmail.com<br>SAC 08002 - 4777</a>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-text">Endereço: <br>Rio de Janeiro <br>Praia de Copacabana, <br> posto 9</a>
-            </li>
-            <li class="nav-item">
-              <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13091.104263857871!2d-43.19486542674519!3d-22.966174945315466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd54579a5956b%3A0xa102deeaffcb3e3!2sPraia%20de%20Copacabana!5e0!3m2!1spt-BR!2sbr!4v1653334380033!5m2!1spt-BR!2sbr" width="90%" height="60vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-text">&copy; Todos os direitos reservados</a>
-            </li>
-            
-          </ul>
-        </div>
+  <nav id="navbarcustom" class="navbar fixed-bottom navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="thirds">
+        <span class="navbar-text">
+          Contato:
+        </span>
+        <span class="navbar-text">
+          email@gmail.com
+        </span>
+        <span class="navbar-text">
+          SAC 08002 - 4777
+        </span>
       </div>
-    </nav>
-  
+      <div class="thirds">
+        <iframe id="maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13091.104263857871!2d-43.19486542674519!3d-22.966174945315466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd54579a5956b%3A0xa102deeaffcb3e3!2sPraia%20de%20Copacabana!5e0!3m2!1spt-BR!2sbr!4v1653334380033!5m2!1spt-BR!2sbr"
+          width="90%" height="60vh" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="thirds">
+        <span class="navbar-text">
+          &copy; Todos os direitos reservados
+        </span>
+      </div>
+    </div>
+  </nav>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-   
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>
-
-

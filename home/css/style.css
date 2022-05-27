@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine&family=Playfair+Display:ital,wght@1,600&display=swap');
 
-* {
+/* * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
     font-size: 15px;
     line-height: 1.5;
 
-}
+} */
 
 html{ height:100%;
 }
@@ -19,60 +19,88 @@ body{
     justify-content: center;
     align-items: center;
     min-height:100%; 
-    padding:0; 
-    margin:0; 
-    position:relative top; 
+    padding:0;
+    padding-bottom: 55px;
+    margin-top: 50px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-image: url(../../imgs/back.svg);   
 }
 
-body::after {
-  content: '';
-  display: block;
-  height: 50px;
+
+#prices{
+    padding: 1px;
+    margin: 2px;
 }
 
-/* -------------------------beggin nav bar --------------------------------*/
-#navbarcustomheader, #navcustomfooter{ 
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.7);
-    z-index:1;
-
+#panel-prices{
+    padding: 2px;
+    background-color: rgba(240, 248, 255, 0.808);
+    margin-bottom: 100px;
 }
 
-#navbarcustomfooter{
-    height: 100px;
+
+.navbar-text{
+    font-size: 13px;
+    text-decoration: none;
+    margin: 5px;
 }
-#navbarSupportedContent{
-    display:flex;
+
+.container-fluid{
+    max-height: 140px;
+}
+
+.navbar{
+    --bs-navbar-brand-margin-end: 6rem;
+}
+
+#navbarcustom{
+    z-index:10;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
 
 }
 
+#header-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#thirds{
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.metade{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-custom{
+    height: 80px;
+}
 
 .navbar-brand{
     margin-left: 1rem;
     align-items: center;
     justify-content: center;
-}
-
-#titulo{
     font-family: 'Domine', serif;;
-    font-size: 4rem;
-    color: rgba(0, 0, 0, 0.548);
+    font-size: 2.5rem;
 }
 
-#links{
-    width: 50vw;
-    justify-content: right;
-
-}
 
 .nav-item{
-    padding: 2rem;
+    padding: 1rem;
 }
 .nav-link{
     font-size: 25px;
@@ -85,9 +113,8 @@ body::after {
 /* -------------------------end nav bar --------------------------------*/
 
 
-.bd-main-order-1{
-    width: 80%;
-    height: 100%;
+.main-home{
+    margin-top: 15rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,21 +134,16 @@ body::after {
 
 }
 
-
-
 #mainContact{
-    margin-top:10rem;
+    margin-top: 1rem;
     margin-left: 3rem;
     margin-right: 2rem;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    z-index: initial;
-    
-
+    z-index: 1;
 }
-
 
 .gifsContato{
     flex-direction: column;
@@ -146,20 +168,16 @@ body::after {
     background-color: rgba(28, 26, 129, 0.733);
     font-family:  Arial, Helvetica, sans-serif;
     text-align: justify;
+    justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 50px;
-    line-height: 2rem;
-    
+    line-height: 1rem;
 }
 
 
-.navbar-text{
-    font-size: 10px;
-}
-.container-fluid{
-    max-height: 1450px;
-}
+
+
 @media screen and (max-width: 750px){
     #navbarcustom{
         display: flex;
