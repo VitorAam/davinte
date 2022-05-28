@@ -3,21 +3,21 @@ class Email{
         this.email = email;
     }
     verifyLogin(){
-        let user = this.email.substring(0, this.email.indexOf('@'));
-        let domain = this.email.substring(this.email.indexOf('@')+1, this.email.length);
-        if ((user.length >=1) &&
-            (domain.length >= 3) &&
-            (user.search("@") ==-1) &&
-            (domain.search("@") ==-1) &&
-            (user.search(" ") ==-1) &&
-            (domain.search(" ") ==-1) &&
-            (domain.search(".") != -1) &&
-            (domain.indexOf(".") >=1) &&
-            (domain.lastIndexOf(".") < domain.length -1)){
-                return true 
-            } else {
-                return false 
+        const expReg = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
+        try{
+            const email = $('#email-cliente').val();
+            if(email === undefined){
+                throw new Error('Página inválida')
             }
+            return expReg.test(email);
+        } catch(erro){
+            const email = document.querySelector('#email-cliente-login').value
+            return expReg.test(email);
+        }
+        
+    
+    //função nativa js '.test' retorna valor booleano para strings que atendam ou não a um critério.
+        
     }
 }
 
@@ -30,36 +30,17 @@ class Cep{
     }
 }
 
-
-function validarSenha(){
-
-    const senhaUm = document.getElementById('senha').value;
-    const senhaDois = document.getElementById('conf-senha').value;
-    const comparaSenha = senhaUm === senhaDois
-
-    if (senhaUm.length < 8 ){
-
-        
-        document.getElementById("senha-invalida").innerHTML = 'Senhas precisam ter 8 caracteres ou mais.';
-        document.getElementById("senha-invalida").style.fontSize = '13px'
-        document.getElementById("senha-invalida").style.color = '#ff0000'
-
-    }else{
-        
-        if( comparaSenha == true) {
-
-        document.getElementById("senha").style.borderColor = '#4ECA64';
-        document.getElementById("conf-senha").style.borderColor = '#4ECA64';
-
-        document.getElementById("senha-invalida").innerHTML = ''
-
-    } else {
-
-        document.getElementById("senha").style.borderColor = '#ff0000';
-        document.getElementById("conf-senha").style.borderColor = '#ff0000';
-
-        document.getElementById("senha-invalida").innerHTML = 'As senhas precisam ser iguais.';
-        document.getElementById("senha-invalida").style.fontSize = '13px'
-        document.getElementById("senha-invalida").style.color = '#ff0000'
-    }}
+class Senha{
+    constructor(senha){
+        this.senha = senha;
+    }
+    confereSenha(senhaDois){
+        if(this.senha.length < 8){
+            return 'falta'
+        } else if (this.senha === senhaDois){
+            return 'certo'
+        } else {
+            return 'falsa'
+        }
+    }
 }

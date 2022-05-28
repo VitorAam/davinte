@@ -62,8 +62,8 @@
               <label></label><br>
               <input type="number" id="rg-cliente" class="form-control" placeholder="Escreva seu RG" required><br>
               <label></label><br>
-              <input type="text" id="email-cliente" class="form-control" placeholder="Entrada e-mail"
-                onblur="validarEmail()" required><span id="error-email"></span>
+              <input type="text" class="form-control" id="email-cliente"placeholder="Entrada e-mail" required>
+              <span id="error-email"></span>
             </div>
           </form>
         </div>
@@ -74,7 +74,7 @@
             <div class="endereco-cliente">
               <div>
                 <label></label><br>
-                <input type="number" id="cep" class="form-control" onblur="pesquisaCep()" placeholder="CEP"
+                <input type="number" id="cep" class="form-control" placeholder="CEP"
                   required><span id="cep-error"></span>
                 <label></label><br>
                 <input type="text" id="rua-cliente" class="form-control" placeholder="Rua, Avenida, Beco..." required>
@@ -105,12 +105,12 @@
               <label></label>
               <input type="password" class="form-control" id="senha" placeholder="Senha"><br>
               <label></label>
-              <input type="password" class="form-control" id="conf-senha" placeholder="Confirme sua senha"
-                onblur="validarSenha()"><br>
+              <input type="password" class="form-control" id="conf-senha" placeholder="Confirme sua senha">
+              <br>
               <p id="senha-invalida"></p>
             </div>
             <div>
-              <button type="submit" class="btn btn-light" id="btn-submit" onclick="enviarForm()">Cadastrar</button>
+              <button type="submit" class="btn btn-light" id="btn-submit">Cadastrar</button>
             </div>
           </form>
         </div>
@@ -154,9 +154,9 @@
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="../../javascript/front/models/model.js"></script>
-  <script src="../../javascript/front/view/view.js"></script>
-  <script src="../../javascript/front/controller/controller.js"></script>
+  <script src="../../javascript/models/model.js"></script>
+  <script src="../../javascript/view/view.js"></script>
+  <script src="../../javascript/controller/controller.js"></script>
 
 </body>
 
