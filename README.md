@@ -67,7 +67,7 @@ https://github.com/VitorAam/davinte
 
 -Sprints em equipe
 
--Delegação e organização de tarefas
+-Delegação de tarefas
 
 
 
