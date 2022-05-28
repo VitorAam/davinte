@@ -14,33 +14,54 @@ https://github.com/VitorAam/davinte
 
 Softwares & Ferramentas utilizadas nesse projeto 📚
 
- HTML5
- CSS3
- JavaScript
- Git
- jQuery
- Bootstrap
+ -HTML5
+ 
+ -CSS3
+ 
+ -JavaScript
+ 
+ -Git
+ 
+ -GitHub
+ 
+ -jQuery
+ 
+ -Bootstrap
  
  
 Tech 🖥️
 
-Indentação do código
-Tags semânticas (HTML)
-Classes (HTML)
-Seletores e Combinadores (CSS)
-Pseudo-classes (CSS)
-Display Flex (CSS)
-Funções (JS)
-Encapsulação 
-framework Bootstrap
-Condicionais para verificação de cadastro, login e recuperação de login
-Utilização de branches, git e github em um repositório público compartilhado entre integrantes do grupo
-Utilização da documentação para auxílio
+-Indentação do código
+
+-Tags semânticas (HTML)
+
+-Classes (HTML)
+
+-Seletores e Combinadores (CSS)
+
+-Pseudo-classes (CSS)
+
+-Display Flex (CSS)
+
+-Funções (JS)
+
+-Encapsulação 
+
+-Framework Bootstrap
+
+-Condicionais para verificação de cadastro, login e recuperação de login
+
+-Utilização de branches, git e github em um repositório público compartilhado entre integrantes do grupo
+
+-Utilização da documentação para auxílio
 
 
 Soft 💭
 
-Organização pela plataforma Lello
-Encontros pelo Discord
-Sprints em equipe
-Delegação e organização de tarefas
+-Organização pela plataforma Lello
+
+-Encontros pelo Discord
+
+-Sprints em equipe
+
+-Delegação e organização de tarefas
