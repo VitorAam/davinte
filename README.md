@@ -68,3 +68,12 @@ https://github.com/VitorAam/davinte
 -Sprints em equipe
 
 -Delegação e organização de tarefas
+
+
+
+<h1>Desenvolvedores 💻</h1>
+
+-Mirna Ramos
+-Karina Silva
+-Vitor Augusto 
+-Renato Negrelly
