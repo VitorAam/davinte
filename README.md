@@ -12,7 +12,8 @@ https://vitoraam.github.io/davinte/home/html/index.html
 https://github.com/VitorAam/davinte
 
 
-Softwares & Ferramentas utilizadas nesse projeto 📚
+
+<h1>Softwares & Ferramentas utilizadas nesse projeto 📚</h1>
 
  -HTML5
  
@@ -29,7 +30,8 @@ Softwares & Ferramentas utilizadas nesse projeto 📚
  -Bootstrap
  
  
-Tech 🖥️
+ 
+<h1>Tech 🖥️</h1>
 
 -Indentação do código
 
@@ -56,7 +58,8 @@ Tech 🖥️
 -Utilização da documentação para auxílio
 
 
-Soft 💭
+
+<h1>Soft 💭<?h1>
 
 -Organização pela plataforma Lello
 
