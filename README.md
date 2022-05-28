@@ -1,5 +1,46 @@
 # davinte
-Projeto desenvolvido para o segundo módulo do curso Web Fullstack da Resilia.
+Projeto desenvolvido para o segundo módulo do curso Web Fullstack da Resilia : Site com a venda de um produto
 
-Link para o site por meio do Github Pages:
+Projeto de encerramento do módulo 2, onde o objetivo foi criar um site interativo focado na venda de um produto com o intuito de praticar o que aprendemos durante o módulo 2.
+
+O produto escolhido foi a venda de uma plataforma modular de armazenamento de dados que recebe o modelo do negócio do cliente e buscar tornar a consulta e tratamentos mais eficazes e ágeis, gerando valor e mais qualidade no atendimento da base de cliente com interface amigável e intuitiva.
+
+📍Link para o site por meio do Github Pages:
 https://vitoraam.github.io/davinte/home/html/index.html
+
+📍Link para repositório está no link a seguir:
+https://github.com/VitorAam/davinte
+
+
+Softwares & Ferramentas utilizadas nesse projeto 📚
+
+ HTML5
+ CSS3
+ JavaScript
+ Git
+ jQuery
+ Bootstrap
+ 
+ 
+Tech 🖥️
+
+Indentação do código
+Tags semânticas (HTML)
+Classes (HTML)
+Seletores e Combinadores (CSS)
+Pseudo-classes (CSS)
+Display Flex (CSS)
+Funções (JS)
+Encapsulação 
+framework Bootstrap
+Condicionais para verificação de cadastro, login e recuperação de login
+Utilização de branches, git e github em um repositório público compartilhado entre integrantes do grupo
+Utilização da documentação para auxílio
+
+
+Soft 💭
+
+Organização pela plataforma Lello
+Encontros pelo Discord
+Sprints em equipe
+Delegação e organização de tarefas
