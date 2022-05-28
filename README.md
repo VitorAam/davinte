@@ -1,4 +1,4 @@
-# davinte
+# Davinte
 Projeto desenvolvido para o segundo módulo do curso Web Fullstack da Resilia : Site com a venda de um produto
 
 Projeto de encerramento do módulo 2, onde o objetivo foi criar um site interativo focado na venda de um produto com o intuito de praticar o que aprendemos durante o módulo 2.
