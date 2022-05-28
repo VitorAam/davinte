@@ -74,6 +74,9 @@ https://github.com/VitorAam/davinte
 <h1>Desenvolvedores 💻</h1>
 
 -Mirna Ramos
+
 -Karina Silva
+
 -Vitor Augusto 
+
 -Renato Negrelly
